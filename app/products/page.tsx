@@ -1,15 +1,15 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Container } from '../../components/container'
-import { PageWrapper } from '../../components/page-wrapper'
+import { Container } from '../../layouts/container'
+import { PageWrapper } from '../../layouts/page-wrapper'
 
 
 export default function Home() {
   return (
     // Hiding the overflow for now, we're not building building the scrolling
     // functionality of the images ;)
-    <PageWrapper className='overflow-hidden pt-20'>
+    <PageWrapper className='overflow-hidden'>
       <Container className='flex flex-row h-screenHeightNoheadFoot pb-3'>
         <div className='flex w-[320px] min-w-[320px] flex-col border-r border-black py-12 pr-4 overflow-y-auto'>
           <h1 className='mb-4 text-6xl uppercase'>Foldy</h1>

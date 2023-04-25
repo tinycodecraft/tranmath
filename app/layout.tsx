@@ -1,9 +1,9 @@
-import { Header } from '../components/header'
+import  Header  from '../components/header'
 import '../styles/globals.css'
 import { Lora } from 'next/font/google'
 import { Footer } from '../components/footer'
 import classNames from 'classnames'
-import NewHeader from '../components/newheader'
+import NewHeader from '../components/header'
 import  SideBar  from '../components/sidebar'
 
 
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en' className={classNames("min-h-screen" ,lora.variable)}>
       <head />
       <body className="min-h-screen">
-        <NewHeader />        
+        <Header />        
         {children}
         <Footer />
       </body>
