@@ -1,0 +1,34 @@
+@layer base {
+    .slider {
+        @apply relative pb-[var(--padding-slide)] cursor-grab;
+    }
+    .slide {
+        @apply w-full h-full absolute;
+    }
+    .controls {
+        @apply px-2 py-0 flex gap-2 justify-center items-start;
+    }
+
+    .control-button {
+        @apply text-white bg-slate-500 border-none px-1 py-2 rounded-sm cursor-pointer ease-in-out duration-300;        
+        &:focus {
+            @apply outline-1 outline-cyan-300
+        }
+        &:active {
+            @apply outline-1 outline-cyan-300
+        }
+
+
+    }
+    .bullet:disabled {
+        @apply bg-cyan-300 text-black cursor-default;
+    }
+
+    .controls__item {
+        @apply flex flex-col items-center justify-center
+    }
+    .indicator {
+        @apply w-1.5 h-1.5 bg-cyan-300 rounded-[50%] mt-2;
+    }
+
+}
