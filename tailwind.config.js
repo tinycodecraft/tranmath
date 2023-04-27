@@ -9,8 +9,9 @@ module.exports = {
     extend: {
       colors: {
         beige: '#FEF5EC',
-        black: '#111',
-        purp: '#5f4bb6',
+        black: 'var(--ash-black)',
+        purp: 'var(--purple)',
+        sky: 'var(--sky)',
       },
       fontFamily: {
         serif: ['var(--font-lora)']

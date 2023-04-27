@@ -7,7 +7,7 @@
         @apply fixed top-0 bottom-0 m-auto flex z-[9] w-[300px] right-0 overflow-hidden
     }
     .menu-layer {
-        @apply absolute top-0 bottom-0 left-0 m-auto flex h-full w-full bg-purp -z-[1]
+        @apply absolute top-0 bottom-0 left-0 m-auto flex h-full w-full bg-sky -z-[1]
     }
 
     .sidebarNavigation {

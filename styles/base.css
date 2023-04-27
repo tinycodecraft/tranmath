@@ -3,17 +3,22 @@
     :root{
         --dark: #1d1d1d;
         --grey-dark: #414141;
+        --ash-black: #222;
         --light: #fff;
         --mid: #ededed;
         --grey: #989898;
         --gray: #989898;
         --green: #28a92b;
+        --beige: #FEF5EC;
         --green-dark: #4e9815;
         --green-light: #6fb936;
         --blue: #2c7ad2;
+        --sky: #00ccff;
         --purple: #8d3dae;
+        --dusk: #6600ff;
         --red: #c82736;
         --orange: #e77614;  
+        --yellow: #ffbb00;
         --padding-slide: calc(100% / 3 * 2);
       }    
 
