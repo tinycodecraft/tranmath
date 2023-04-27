@@ -12,7 +12,7 @@ export default function Menu({children, links, breadname}: {children?: React.Rea
     const path = usePathname()
   return (
     <header className='flex justify-between fixed top-0 left-0 right-0 m-auto z-10'>
-    <div className='brand-icon'>
+    <div className='brand-icon w-screen'>
         <Link href='/' >
             <div className='icon'>
                 <FaReact ></FaReact>

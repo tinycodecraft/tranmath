@@ -1,5 +1,5 @@
 'use client'
-import { HTMLMotionProps,PanInfo } from 'framer-motion'
+import { HTMLMotionProps, PanInfo } from 'framer-motion'
 import React, { createContext, useCallback } from 'react'
 import { useState } from 'react'
 
@@ -7,9 +7,9 @@ interface CarouselContextProps {
   currentIndex: number
   direction: -1 | 1
   maxLength: number
-  paginate?: (dir: 1|-1) => void
-  paginateTo?: (index: number) => void,
-  handleDrag?: (e: MouseEvent|TouchEvent | PointerEvent, info: PanInfo)=> void;
+  paginate?: (dir: 1 | -1) => void
+  paginateTo?: (index: number) => void
+  handleDrag?: (e: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => void
 }
 
 const CarouselContext = createContext<CarouselContextProps>({
@@ -34,11 +34,9 @@ export const CarouselProvider = ({
     return Math.abs(offset) * velocity
   }
 
-
   const paginate = useCallback(
-    (dir: -1|1) => {
-      logCurrentIndex([wrap(0, maxLength, currentIndex + dir), dir]);
-      
+    (dir: -1 | 1) => {
+      logCurrentIndex([wrap(0, maxLength, currentIndex + dir), dir])
     },
     [currentIndex, maxLength],
   )
@@ -72,7 +70,7 @@ export const CarouselProvider = ({
         maxLength,
         paginate,
         paginateTo,
-        handleDrag
+        handleDrag,
       }}
     >
       {children}

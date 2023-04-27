@@ -54,7 +54,7 @@ export function SideBar({ links }: { links: MenuItemProps[] }) {
             <div className='sidebar-top'>
               <div className='links-wrapper'>
                 <Link
-                  className='menu=link'
+                  className='menu-link'
                   href='/'
                   onClick={() => toggleClosedShow && toggleClosedShow(false)}
                 >
