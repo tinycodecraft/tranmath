@@ -11,7 +11,7 @@ export default function Home() {
     // functionality of the images ;)
     <PageWrapper className='overflow-hidden'>
       <Container className='flex flex-row h-screenHeightNoheadFoot pb-3'>
-        <div className='flex w-[320px] min-w-[320px] flex-col border-r border-black py-12 pr-4 overflow-y-auto'>
+        <div className='flex w-[320px] min-w-[320px] flex-col border-r border-black py-12 pr-4'>
           <h1 className='mb-4 text-6xl uppercase'>Foldy</h1>
           <p className='mb-1 text-xl'>$3,390</p>
           <p>It is a steal! I know you want it!</p>
