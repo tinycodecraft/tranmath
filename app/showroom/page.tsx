@@ -25,7 +25,7 @@ const images: ImageItemProps[] = [
 export default function Home() {
   return (
     <PageWrapper>
-      <Container className='h-full overflow-y-auto' >
+      <Container className='pb-12' >
         <CarouselProvider len={images.length}>
           <RollImage links={images}  />
         </CarouselProvider>
