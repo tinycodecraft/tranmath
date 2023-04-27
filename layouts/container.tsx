@@ -1,5 +1,5 @@
 // The package classNames is an easy way to merge class names.
-import classNames from "classnames";
+import {clsxm} from "../context/clsxm";
 
 /**
  * The reason I have a container component is so we don't have to repeat
@@ -12,4 +12,4 @@ export const Container = ({
 }: {
   children: React.ReactNode;
   className?: string;
-}) => <div className={classNames("mx-12", className)}>{children}</div>;
+}) => <div className={clsxm("mx-12", className)}>{children}</div>;

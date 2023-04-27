@@ -8,3 +8,8 @@ interface MenuItemProps {
   href: string
   label: string
 }
+
+interface ImageItemProps {
+  href: string;
+  title: string;
+}

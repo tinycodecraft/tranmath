@@ -2,7 +2,7 @@ import  Header  from '../components/header'
 import '../styles/globals.css'
 import { Lora } from 'next/font/google'
 import { Footer } from '../components/footer'
-import classNames from 'classnames'
+import { clsxm } from '../context/clsxm'
 import NewHeader from '../components/header'
 import  SideBar  from '../components/sidebar'
 
@@ -18,7 +18,7 @@ const lora = Lora({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className={classNames("min-h-screen" ,lora.variable)}>
+    <html lang='en' className={clsxm("min-h-screen" ,lora.variable)}>
       <head />
       <body className="min-h-screen">
         <Header />        

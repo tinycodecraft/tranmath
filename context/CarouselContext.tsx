@@ -7,7 +7,7 @@ interface CarouselContextProps {
   currentIndex: number
   direction: -1 | 1
   maxLength: number
-  paginate?: (dir: number) => void
+  paginate?: (dir: 1|-1) => void
   paginateTo?: (index: number) => void,
   handleDrag?: (e: MouseEvent|TouchEvent | PointerEvent, info: PanInfo)=> void;
 }
@@ -36,10 +36,11 @@ export const CarouselProvider = ({
 
 
   const paginate = useCallback(
-    (index: number) => {
-      logCurrentIndex([wrap(0, maxLength, currentIndex + direction), direction])
+    (dir: -1|1) => {
+      logCurrentIndex([wrap(0, maxLength, currentIndex + dir), dir]);
+      
     },
-    [currentIndex, maxLength, direction],
+    [currentIndex, maxLength],
   )
 
   const paginateTo = useCallback((index: number) => {
