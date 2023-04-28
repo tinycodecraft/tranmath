@@ -2,6 +2,7 @@ import React from 'react'
 import { MenuProvider } from '../context/MenuContext'
 import Menu from './menu';
 import { MenuItemProps } from './props'
+import RollMenu from './rollmenu';
 import  SideBar  from './sidebar';
 
 
@@ -15,8 +16,8 @@ const links : MenuItemProps[]= [
 
 export default function Header() {
   return (
-    <MenuProvider>
-        <Menu links={links} breadname='Fur Nature'></Menu>
+    <MenuProvider len={links.length}>
+        <RollMenu links={links} breadname='Fur Nature'></RollMenu>
         <SideBar links={links} />
     </MenuProvider>
   )

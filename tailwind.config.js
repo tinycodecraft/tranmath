@@ -16,6 +16,11 @@ module.exports = {
       fontFamily: {
         serif: ['var(--font-lora)']
       },
+      width: {
+
+        menuWidthWithoutSideButton: 'calc(100vw - 48px)',
+
+      },
 
       minHeight: {
         screenHeightWithoutHeader: 'calc(100vh - 3rem)',
