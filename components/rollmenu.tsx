@@ -18,18 +18,20 @@ export default function RollMenu({
 
   return (
     <header className='flex justify-between fixed top-0 left-0 right-0 m-auto z-10 items-center'>
-      <ul className='h-12'>
-        {links.map((el, index) => {
-          const optionalclass = clsx({ 'translate-x-full': currentIndex != index })
-          const elclass = clsxm(optionalclass, ' absoute w-menuWidthWithoutSideButton left-0 top-10 text-center')
+      <div className='inline-block overflow-hidden w-menuWidthWithoutSideButton'>
+        <ul className='absolute h-12 flex'>
+          {links.map((el, index) => {
+            const optionalclass = clsx({ 'translate-x-full': currentIndex != index })
+            const elclass = clsxm(optionalclass, ' w-menuWidthWithoutSideButton text-center')
 
-          return (
-            <li key={el.label} className={elclass}>
-              <span>{el.label}</span>{' '}
-            </li>
-          )
-        })}
-      </ul>
+            return (
+              <li key={el.label} className='w-menuWidthWithoutSideButton text-center'>
+                <span>{el.label}</span>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
       <div>
         <button
           type='button'
